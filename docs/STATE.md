@@ -3,23 +3,27 @@
 Last updated: 2026-08-06
 
 ## Built
-- Repo created, docs/ established, pushed to GitHub
-- METHOD.md written and mirrored into the Foundry project knowledge
-- Foundry project created in claude.ai with instructions and context sources
+- Repo at github.com/enepac/foundry, public, raw URLs verified live
+- docs/METHOD.md: the method itself, mirrored into the Foundry project
+- docs/STATE.md: this file, fetched by chat rather than mirrored
+- CLAUDE.md at root, plus templates/CLAUDE.md as the per-repo template
+- Four skills in .claude/skills/ and templates/skills/: plan, check, fix, log
+- Templates for PRODUCT.md, DECISIONS.md, STATE.md
+- new-project.sh: stamps the method into a new or existing repo, non-destructive
+- Foundry project in claude.ai: instructions set, METHOD.md mirrored,
+  STATE.md raw URL registered as a fetch source
 
 ## In progress
-- STATE.md (this file)
+- Nothing
 
 ## Next up
-1. CLAUDE.md template, the working agreement every product repo carries
-2. Workflow commands in .claude/commands/ (plan, build, check, fix, log)
-3. Templates for PRODUCT.md and DECISIONS.md
-4. First real use: apply the method to one product repo end to end
+1. Run new-project.sh against one real product repo and fill in PRODUCT.md
+2. Use the method on one real feature end to end, chat decides then Claude Code builds
+3. Edit whatever fails during that first run
 
 ## Blocked
 - Nothing
 
 ## Open questions
-- Which product repo gets the method applied first
-- Whether the five commands are the right five, or whether some are
-  better left as plain instructions in CLAUDE.md
+- Which repo goes first
+- Whether four skills are the right four, judged after the first real run
